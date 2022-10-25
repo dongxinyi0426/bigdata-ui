@@ -1,9 +1,9 @@
 <template>
     <div class="address">
-        Address:  {{data.Address}}
+        Address:  {{data.userId}}
     </div>
     <div class="carparkno">
-        Car Park No:  {{data.Car_park_no}}
+        Car Park No:  {{data.predictionCost}}
     </div>
     <div class="lots">
         Current Lots Available: {{data.Current_Lots_Available}}
@@ -18,17 +18,10 @@
     <div class="distance">
         Distance:  {{data.Distance}}&nbsp;meters
     </div>
-    <div class="map" :id="`map-${index}`"></div>
+
 </template>
 
 <script>
-import { Loader } from "@googlemaps/js-api-loader";
-const loader = new Loader({
-//   apiKey: import.meta.env.VITE_APIKEY,
-  apiKey: window.atob("QUl6YVN5RFY1SlNRMkM1ZF84RV83bkxGY3hNU3FjbmdoLTI3bjZz"),
-  version: "weekly",
-});
-
 export default {
     data() {
         return {
