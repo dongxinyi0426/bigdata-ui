@@ -1,7 +1,6 @@
 <script>
 import axios from 'axios';
 import ListItem from './ListItem.vue';
-import Dialog from './window.vue';
 
 export default {
     data() {
