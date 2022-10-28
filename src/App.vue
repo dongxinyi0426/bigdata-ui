@@ -21,7 +21,7 @@ export default {
         async search() {
             // 请求接口
             const params = this.formvalue;
-            const res = await axios.post("https://54.179.112.4:8081/getRecommendationList", params);
+            const res = await axios.post("https://8db1n4o7gd.execute-api.ap-southeast-1.amazonaws.com/getRecommendationList", params);
             console.log("!!!!!!!!")
             this.userId = res.data.userId;
             console.log("userID ++  " + this.userId)
